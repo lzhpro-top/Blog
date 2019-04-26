@@ -1,0 +1,5 @@
+server:
+  port: 8080
+
+file: 
+  root: D://fileRoot #文件根路径

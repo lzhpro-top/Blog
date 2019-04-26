@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input value="click" type="button" id="click">
+	<script type="text/javascript" src="/test/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/test/js/common.js"></script>
+	<script type="text/javascript">
+	$("#click").click(function(){
+		uploadFile(function(url){
+			alert(url);
+		});
+	});
+	
+	</script>
+</body>
+</html>
