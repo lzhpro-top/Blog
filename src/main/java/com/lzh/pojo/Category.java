@@ -23,4 +23,6 @@ import lombok.NoArgsConstructor;
 public class Category {
 	private String id;
 	private String categoryName;
+	//文章数
+	private int articleNum;
 }

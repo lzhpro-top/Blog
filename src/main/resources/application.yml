@@ -1,5 +1,22 @@
 server:
   port: 8080
 
+spring:
+  application:
+    name: ecard
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss #设置返回格式
+    time-zone: GMT+8 #设置时区
+  data: 
+    mongodb:
+      uri: mongodb://localhost:27017/blog
+logging:
+  level:
+    #com.listenrobot.common.http.filter.HttpLoggingFilter: DEBUG
+    org.springframework.data.mongodb.core: DEBUG
+
 file: 
   root: D://fileRoot #文件根路径
+  
+swagger: 
+  enabled: true #是否开启swagger
